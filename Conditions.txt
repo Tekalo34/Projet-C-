@@ -1,0 +1,13 @@
+Classe Pesonnage : nom, pv, Force, type d'arme, sort, Taux Critique;
+(sorts: fonction de soin (healing), boule de feu (fireball), multiplicateur de dégats (rage), chaques combats : 1 seul sort parmis les 3);
+
+Types d'Armes : baton (magique), épée, bouclier (1 type d'arme par perso, chaque arme à ces propres stats : dégats, défense);
+
+Calcul Dégats : dégat du player X dégats de l'arme X ramdom(-10 || +10), ramdom(bool : réussi l'attaque // rate l'attaque);
+
+Taux Critique : augmente sur le player (possibilité de raté l'atk en ayant crit);
+
+Le player contrôle 2 personnages;
+
+
+
