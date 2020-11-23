@@ -19,7 +19,7 @@ public :
 	int getHP();
 	int getStrength();
 	float getCrit_Rate();
-	Weapon getWeapon();
+	Weapon getWeaponType();
 
 	// Setters
 	void setName();

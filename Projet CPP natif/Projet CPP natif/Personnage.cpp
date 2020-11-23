@@ -32,7 +32,7 @@ float Personnage::getCrit_Rate()
 	return taux_crit;
 }
 
-Weapon Personnage::getWeapon()
+Weapon Personnage::getWeaponType()
 {
 	return arme;
 }
@@ -45,14 +45,37 @@ void Personnage::setName()
 	cout << "\n";
 }
 
+// Methode pour le choix de l'arme
 void Personnage::setWeapon()
 {
-	cout << "Choisissez votre arme\n";
+	cout << "Maintenant " << getName() <<" il vous faut une arme !\n";
 	cout << "Vous avez le choix entre : \n\n";
 	cout << "- Epee\n";
 	cout << "- Baton Magique\n";
-	cout << "- Bouclier\n";
+	cout << "- Bouclier\n\n";
+	cout << "(Attention vous n'avez le droit qu'a une seule arme !)\n\n";
+	cout << "Alors quel sera votre arme ? : ";
 	cin >> arme;
+	
+	switch (arme)
+	{
+		case "Epee" :
+			cout << "*Epee ajoutee au sac*\n";
+		break;
+
+		case "Baton Magique" :
+			cout << "*Baton Magique ajoute au sac*\n";
+		break;
+
+		case "Bouclier" :
+			cout << "*Bouclier ajoute au sac*\n";
+		break;
+
+		default :
+			cout << "Cette arme n'extiste pas . . . Desole ! \n";
+			setWeapon();
+		break;
+	}
 }
 
 // Methode affichant "Personnage"

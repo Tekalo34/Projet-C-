@@ -1,6 +1,9 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "Sword.h"
+#include "Shield.h"
+#include "Magic_Wand.h"
 
 using namespace std;
 
@@ -8,14 +11,17 @@ class Weapon
 {
 public:
 	// Constructor
-	Weapon(string Name, int Strength);
+	Weapon();
 
 	// Getters
-	string getName();
-	int getStrength();
+	string getWeaponName();
+	string getWeaponType();
+
+	// Setter
+	void setWeaponName();
 
 private:
 	// Attributs
-	string nom;
-	int force;
+	string nomArme;
+	string typeArme;
 };

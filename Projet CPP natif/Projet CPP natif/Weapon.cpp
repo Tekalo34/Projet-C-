@@ -1,20 +1,25 @@
 #include "Weapon.h"
 
 // Conctructor
-Weapon::Weapon(string Name, int Strength)
+Weapon::Weapon()
 {
-	nom = Name;
-	force = Strength;
 }
 
-// Getter de "nom"
-string Weapon::getName()
+// Getter de "nomArme"
+string Weapon::getWeaponName()
 {
-	return nom;
+	return nomArme;
 }
 
-//Getter de "force"
-int Weapon::getStrength()
+// Getter de "WeaponType"
+string Weapon::getWeaponType()
 {
-	return force;
+	return typeArme;
+}
+
+// Setter de "nomArme"
+void Weapon::setWeaponName()
+{
+	cout << "Donnez un nom a votre arme : ";
+	cin >> nomArme;
 }
