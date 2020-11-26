@@ -38,24 +38,34 @@ Weapon Personnage::getWeaponType()
 }
 
 // Setter de "nom"
-void Personnage::setName()
+void Personnage::setP1Name()
 {
-	cout << "Entrez le Nom de votre Personnage : ";
+	cout << "Entrez le nom de votre 1er Personnage : ";
 	cin >> nom;
-	cout << "\n";
+	system("cls");
+}
+
+// Setter de "nom"
+void Personnage::setP2Name()
+{
+	cout << "Entrez le nom de votre 2nd Personnage : ";
+	cin >> nom;
+	system("cls");
 }
 
 // Methode pour le choix de l'arme
 void Personnage::setWeapon()
 {
-	cout << "Maintenant " << getName() <<" il vous faut une arme !\n";
+	cout << "Maintenant " << getName() <<" il vous faut une arme !\n\n";
 	cout << "Vous avez le choix entre : \n\n";
-	cout << "- Epee\n";
-	cout << "- Baton Magique\n";
-	cout << "- Bouclier\n\n";
+
+	cout << "- Epee " << Sword::showStats << " ;\n";
+	cout << "- Baton Magique " << Shield::showStats << " ;\n";
+	cout << "- Bouclier " << Magic_Wand::showStats << " ;\n\n";
+	
 	cout << "(Attention vous n'avez le droit qu'a une seule arme !)\n\n";
 	cout << "Alors quel sera votre arme ? : ";
-	cin >> arme;
+	/*cin >> arme;
 	
 	switch (arme)
 	{
@@ -75,13 +85,19 @@ void Personnage::setWeapon()
 			cout << "Cette arme n'extiste pas . . . Desole ! \n";
 			setWeapon();
 		break;
-	}
+	}*/
 }
 
 // Methode affichant "Personnage"
 void Personnage::ShowCharacter()
 {
-	cout << "-------";
+	string continuer;
+	// cout << sizeof(getName()); // Debug
+
+	cout << "\n\n\n\n\n\n\n";
+	
+	cout << "	    ~~~~| Resume de votre Personnage |~~~~\n\n";
+	cout << "	-------";
 	
 	for (int i = 0; i < sizeof(getName()); i++)
 	{
@@ -89,8 +105,8 @@ void Personnage::ShowCharacter()
 	}
 	
 	cout << "\n";
-	cout << "       " << getName()  << "\n";
-	cout << "-------";
+	cout << "			" << getName()  << "\n";
+	cout << "	-------";
 
 	for (int i = 0; i < sizeof(getName()); i++)
 	{
@@ -98,8 +114,49 @@ void Personnage::ShowCharacter()
 	}
 
 	cout << "\n\n";
-	cout << "_____| " << "Stats" << " |_____\n\n";
-	cout << "Health : " << getHP() << " HP" << "\n";
-	cout << "Strength : " << getStrength() << " %" << "\n";
-	cout << "Critical Rate : " << getCrit_Rate() << " %" << "\n";
+	cout << "		    _____| " << "Stats" << " |_____\n\n";
+	cout <<	"		    Vie : " << getHP() << " HP" << "\n";
+	cout << "		    Force : " << getStrength() << " %" << "\n";
+	cout << "		    Taux de Critique : " << getCrit_Rate() << " %" << "\n\n\n\n\n\n\n\n\n\n\n";
+
+	cout << "(Appuyez sur 'Entrer' pour continuer) ";
+	cin >> continuer;
+
+	while (continuer != "1")
+	{	
+		system("cls");
+		
+		cout << "                      |\n";
+		cout << "  J'ai dit 'Entrer' ! |\n";
+		cout << "______________________|\n\n\n\n\n";
+		
+		cout << "	    ~~~~| Resume de votre Personnage |~~~~ \n\n";
+
+		cout << "	-------";
+
+		for (int i = 0; i < sizeof(getName()); i++)
+		{
+			cout << "-";
+		}
+
+		cout << "\n";
+		cout << "			" << getName() << "\n";
+		cout << "	-------";
+
+		for (int i = 0; i < sizeof(getName()); i++)
+		{
+			cout << "-";
+		}
+
+		cout << "\n\n";
+		cout << "		    _____| " << "Stats" << " |_____\n\n";
+		cout << "		    Vie : " << getHP() << " HP" << "\n";
+		cout << "		    Force : " << getStrength() << " %" << "\n";
+		cout << "		    Taux de Critique : " << getCrit_Rate() << " %" << "\n\n\n\n\n\n\n\n\n\n\n";
+
+		cout << "(Appuyez sur 'Entrer' pour continuer) ";
+		cin >> continuer;
+	}
+
+	system("cls");
 }

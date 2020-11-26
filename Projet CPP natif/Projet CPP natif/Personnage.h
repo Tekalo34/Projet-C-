@@ -22,7 +22,8 @@ public :
 	Weapon getWeaponType();
 
 	// Setters
-	void setName();
+	void setP1Name();
+	void setP2Name();
 	void setWeapon();
 
 private :
