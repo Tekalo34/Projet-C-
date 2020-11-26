@@ -1,7 +1,7 @@
 #pragma once
 #include "Weapon.h"
 
-class Shield //: public Weapon
+class Shield : public Weapon
 {
 public:
 	// Constructor

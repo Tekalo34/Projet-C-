@@ -1,9 +1,8 @@
 #pragma once
-#include <iostream>
-#include <string>
 #include "Sword.h"
 #include "Shield.h"
 #include "Magic_Wand.h"
+#include "Personnage.h"
 
 using namespace std;
 
@@ -13,6 +12,9 @@ public:
 	// Constructor
 	Weapon();
 
+	// Methodes
+	virtual void showStats();
+	
 	// Getters
 	string getWeaponName();
 	string getWeaponType();

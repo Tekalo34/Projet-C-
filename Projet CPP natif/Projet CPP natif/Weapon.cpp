@@ -23,3 +23,8 @@ void Weapon::setWeaponName()
 	cout << "Donnez un nom a votre arme : ";
 	cin >> nomArme;
 }
+
+// Methode pour afficher les stats des armes
+void Weapon::showStats()
+{
+}

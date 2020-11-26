@@ -1,10 +1,28 @@
 ﻿  Magic_Wand.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Shield.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,23): error C2061: erreur de syntaxe : identificateur 'Weapon'
   Main.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Shield.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Magic_Wand.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Main.cpp(53,31): error C2660: 'Personnage::setWeapon' : la fonction ne prend pas 0 arguments
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,7): message : voir la déclaration de 'Personnage::setWeapon'
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Main.cpp(57,30): error C2660: 'Personnage::setWeapon' : la fonction ne prend pas 0 arguments
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,7): message : voir la déclaration de 'Personnage::setWeapon'
   Personnage.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Shield.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Magic_Wand.h(5,1): error C2504: 'Weapon' : classe de base non définie
 C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.cpp(62,40): error C3867: 'Sword::showStats' : syntaxe non-standard ; utilisez '&' pour créer un pointeur vers un membre
-C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.cpp(63,50): error C3867: 'Shield::showStats' : syntaxe non-standard ; utilisez '&' pour créer un pointeur vers un membre
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.cpp(63,45): error C3867: 'Weapon::showStats' : syntaxe non-standard ; utilisez '&' pour créer un pointeur vers un membre
 C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.cpp(64,49): error C3867: 'Magic_Wand::showStats' : syntaxe non-standard ; utilisez '&' pour créer un pointeur vers un membre
   Shield.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Magic_Wand.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,23): error C2061: erreur de syntaxe : identificateur 'Weapon'
   Sword.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Shield.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Magic_Wand.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,23): error C2061: erreur de syntaxe : identificateur 'Weapon'
   Weapon.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Shield.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Magic_Wand.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,23): error C2061: erreur de syntaxe : identificateur 'Weapon'
   Génération de code en cours...

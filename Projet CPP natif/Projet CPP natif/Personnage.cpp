@@ -32,7 +32,7 @@ float Personnage::getCrit_Rate()
 	return taux_crit;
 }
 
-Weapon Personnage::getWeaponType()
+string Personnage::getWeaponType()
 {
 	return arme;
 }
@@ -54,13 +54,13 @@ void Personnage::setP2Name()
 }
 
 // Methode pour le choix de l'arme
-void Personnage::setWeapon()
+void Personnage::setWeapon(Weapon*W)
 {
 	cout << "Maintenant " << getName() <<" il vous faut une arme !\n\n";
 	cout << "Vous avez le choix entre : \n\n";
 
 	cout << "- Epee " << Sword::showStats << " ;\n";
-	cout << "- Baton Magique " << Shield::showStats << " ;\n";
+	cout << "- Baton Magique " << W->showStats << " ;\n";
 	cout << "- Bouclier " << Magic_Wand::showStats << " ;\n\n";
 	
 	cout << "(Attention vous n'avez le droit qu'a une seule arme !)\n\n";
@@ -91,7 +91,7 @@ void Personnage::setWeapon()
 // Methode affichant "Personnage"
 void Personnage::ShowCharacter()
 {
-	string continuer;
+	string continuer = "a";
 	// cout << sizeof(getName()); // Debug
 
 	cout << "\n\n\n\n\n\n\n";
@@ -120,9 +120,9 @@ void Personnage::ShowCharacter()
 	cout << "		    Taux de Critique : " << getCrit_Rate() << " %" << "\n\n\n\n\n\n\n\n\n\n\n";
 
 	cout << "(Appuyez sur 'Entrer' pour continuer) ";
-	cin >> continuer;
+	getline(cin, continuer);
 
-	while (continuer != "1")
+	while (continuer != "")
 	{	
 		system("cls");
 		
@@ -155,7 +155,7 @@ void Personnage::ShowCharacter()
 		cout << "		    Taux de Critique : " << getCrit_Rate() << " %" << "\n\n\n\n\n\n\n\n\n\n\n";
 
 		cout << "(Appuyez sur 'Entrer' pour continuer) ";
-		cin >> continuer;
+		getline(cin, continuer);
 	}
 
 	system("cls");

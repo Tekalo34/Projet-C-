@@ -1,11 +1,10 @@
 #include <iostream>
 #include <string>
-#include <dos.h>
 #include "Personnage.h"
 
 using namespace std;
 
-string continuer;
+string continuer = "1";
 
 void MainMenuAffichage() {
 	
@@ -14,9 +13,9 @@ void MainMenuAffichage() {
 	cout << "						       Game Title\n\n";
 	cout << "-----------------------------------------------------------" << "--" << "-----------------------------------------------------------\n\n\n";
 	cout << "					   (Appuyer sur 'Entrer' pour Jouer) ";
-	cin >> continuer;
+	getline(cin, continuer);
 	
-	while (continuer != "1")
+	while (continuer != "")
 	{
 		system("cls");
 
@@ -29,7 +28,7 @@ void MainMenuAffichage() {
 		cout << "						       Game Title\n\n";
 		cout << "-----------------------------------------------------------" << "--" << "-----------------------------------------------------------\n\n\n";
 		cout << "					   (Appuyer sur 'Entrer' pour Jouer) ";
-		cin >> continuer;
+		getline(cin, continuer);
 	}
 
 	system("cls");
@@ -57,34 +56,34 @@ int main() {
 	Second_Personnage.ShowCharacter();
 	Second_Personnage.setWeapon();
 
-	cout << "Vous arrivez dans le hall de la guilde avec votre équipier(ère). Le chef de guilde vous tends deux missions de niveau bronze que vous savez être le niveau d'aventurier le plus bas." << endl;
+	cout << "Vous arrivez dans le hall de la guilde avec votre equipier(ere). Le chef de guilde vous tends deux missions de niveau bronze que vous savez etre le niveau d'aventurier le plus bas." << endl;
 	cout << "1- ''DES RATS !''" << endl;
 	cout << "Lieu : Auberge de Frank" << endl;
-	cout << "Bonjour aventurier(ère)s, je me nomme Frank, aubergiste depuis plus de 30ans." << endl;
-	cout << "Hélas mon commerce se trouve en danger : des rats on élu domicile dans ma cuisine !" << endl;
-	cout << "Aidez moi et je vous régalerez avec mon délicieux bouillon de poule et vous payerais de quelques pièces de cuivre." << endl;
+	cout << "Bonjour aventurier(ere)s, je me nomme Frank, aubergiste depuis plus de 30ans." << endl;
+	cout << "Helas mon commerce se trouve en danger : des rats on elu domicile dans ma cuisine !" << endl;
+	cout << "Aidez moi et je vous régalerez avec mon delicieux bouillon de poule et vous payerais de quelques pieces de cuivre." << endl;
 	cout << "2- ''DES MITES...''" << endl;
 	cout << "Lieu : Atelier de couture de Charlotte" << endl;
-	cout << "Chèr(e)s aventurier(ère)s, je suis Charlotte, couturière de mère en fille depuis 5 générations." << endl;
-	cout << "Depuis deux jours mes tissus semblent rongés par les mites; Malheureusement j'en ai la phobie et suis dans l'incapacité de m'en débarasser." << endl;
-	cout << "Aidez moi je vous prie. Vous serez payer généreusement de quelques pièces d'argent; suivant le nombre de nuisibles tués." << endl;
-	cout << "/A vous de choisir joueur 1/"
+	cout << "Cher(e)s aventurier(ere)s, je suis Charlotte, couturiere de mere en fille depuis 5 generations." << endl;
+	cout << "Depuis deux jours mes tissus semblent ronges par les mites; Malheureusement j'en ai la phobie et suis dans l'incapacite de m'en debarasser." << endl;
+	cout << "Aidez moi je vous prie. Vous serez payer genereusement de quelques pieces d'argent; suivant le nombre de nuisibles tues." << endl;
+	cout << "/A vous de choisir joueur 1/";
 	cin >> choix;
 	cout << endl;
 
 	switch(choix)
 	{
-		case 1
-		cout << "CHEF DE GUILDE : Exellent choix ! Ramenez moi un peu de bouillon si vous réussissez." << endl;
-		cout << "Dit-il le sourir en coin."
+	case 1 :
+		cout << "CHEF DE GUILDE : Exellent choix ! Ramenez moi un peu de bouillon si vous reussissez." << endl;
+		cout << "Dit-il le sourir en coin.";
 		break;
 
-		case 2
-		cout << "CHEF DE GUILDE : Haha les mites ! Très bon choix ! Saluez mademoiselle Charlotte pour moi." << endl;
-		cout << "Dit-il d'un ton amical."
+	case 2:
+		cout << "CHEF DE GUILDE : Haha les mites ! Tres bon choix ! Saluez mademoiselle Charlotte pour moi." << endl;
+		cout << "Dit-il d'un ton amical.";
 		break;
 
-		default
+	default:
 		cout << "Choisissez 1 ou 2." << endl;
 		break;
 	}
