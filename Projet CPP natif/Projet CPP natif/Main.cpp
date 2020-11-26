@@ -68,6 +68,10 @@ int main() {
 	cout << "Depuis deux jours mes tissus semblent ronges par les mites; Malheureusement j'en ai la phobie et suis dans l'incapacite de m'en debarasser." << endl;
 	cout << "Aidez moi je vous prie. Vous serez payer genereusement de quelques pieces d'argent; suivant le nombre de nuisibles tues." << endl;
 	cout << "/A vous de choisir joueur 1/";
+	cout << "Chèr(e)s aventurier(ère)s, je suis Charlotte, couturière de mère en fille depuis 5 générations." << endl;
+	cout << "Depuis deux jours mes tissus semblent rongés par les mites; Malheureusement j'en ai la phobie et suis dans l'incapacité de m'en débarasser." << endl;
+	cout << "Aidez moi je vous prie. Vous serez payer généreusement de quelques pièces d'argent; suivant le nombre de nuisibles tués." << endl;
+	cout << "/A vous de choisir joueur (1 ou 2)/"
 	cin >> choix;
 	cout << endl;
 
