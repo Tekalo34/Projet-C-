@@ -56,6 +56,7 @@ int main() {
 	Second_Personnage.ShowCharacter();
 	Second_Personnage.setWeapon();
 
+	//Scene 1
 	cout << "Vous arrivez dans le hall de la guilde avec votre equipier(ere). Le chef de guilde vous tends deux missions de niveau bronze que vous savez etre le niveau d'aventurier le plus bas." << endl;
 	cout << "1- ''DES RATS !''" << endl;
 	cout << "Lieu : Auberge de Frank" << endl;
@@ -71,11 +72,11 @@ int main() {
 	cout << "Chèr(e)s aventurier(ère)s, je suis Charlotte, couturière de mère en fille depuis 5 générations." << endl;
 	cout << "Depuis deux jours mes tissus semblent rongés par les mites; Malheureusement j'en ai la phobie et suis dans l'incapacité de m'en débarasser." << endl;
 	cout << "Aidez moi je vous prie. Vous serez payer généreusement de quelques pièces d'argent; suivant le nombre de nuisibles tués." << endl;
-	cout << "/A vous de choisir joueur (1 ou 2)/"
+	cout << "/A vous de choisir joueur 1 (choix 1 ou 2)/"
 	cin >> choix;
 	cout << endl;
 
-	switch(choix)
+	switch(choix) //Choix 1
 	{
 	case 1 :
 		cout << "CHEF DE GUILDE : Exellent choix ! Ramenez moi un peu de bouillon si vous reussissez." << endl;
