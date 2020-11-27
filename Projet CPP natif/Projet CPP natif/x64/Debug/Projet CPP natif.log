@@ -1,2 +1,12 @@
-﻿  Main.cpp
-  Projet CPP natif.vcxproj -> C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\x64\Debug\Projet CPP natif.exe
+﻿  Magic_Wand.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
+  Main.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
+  Personnage.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
+  Shield.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
+  Sword.cpp
+  Weapon.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
+  Génération de code en cours...

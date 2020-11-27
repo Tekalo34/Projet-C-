@@ -25,11 +25,6 @@ int Sword::getRange()
 	return portee;
 }
 
-/*string Sword::getWeaponName()
-{
-	return "Epee";
-}*/
-
 // Methode pour afficher les stats des armes
 void Sword::showStats()
 {

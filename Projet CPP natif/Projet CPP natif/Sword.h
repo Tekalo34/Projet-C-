@@ -1,7 +1,7 @@
 #pragma once
 #include "Weapon.h"
 
-class Sword //: public Weapon
+class Sword : public Weapon
 {
 public:
 	// Constructor
@@ -14,7 +14,6 @@ public:
 	int getDamage();
 	int getDef();
 	int getRange();
-	//string getWeaponName();
 
 private:
 	// Attributs

@@ -14,7 +14,6 @@ public:
 	int getDamage();
 	int getDef();
 	int getRange();
-	//string getWeaponName();
 
 private:
 	// Attributs

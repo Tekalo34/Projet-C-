@@ -26,11 +26,6 @@ int Magic_Wand::getRange()
 	return portee;
 }
 
-/*string Magic_Wand::getWeaponName()
-{
-	return "Baton Magique";
-}*/
-
 // Methode pour afficher les stats des armes
 void Magic_Wand::showStats()
 {

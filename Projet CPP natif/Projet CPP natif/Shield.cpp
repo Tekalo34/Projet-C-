@@ -25,11 +25,6 @@ int Shield::getRange()
 	return portee;
 }
 
-/*string Shield::getWeaponName()
-{
-	return "Bouclier";
-}*/
-
 // Methode pour afficher les stats des armes
 void Shield::showStats()
 {
