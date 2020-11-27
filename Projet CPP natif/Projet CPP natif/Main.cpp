@@ -10,7 +10,7 @@ void MainMenuAffichage() {
 	
 	cout << "\n\n\n\n\n\n\n\n";
 	cout << "-----------------------------------------------------------" << "--" << "-----------------------------------------------------------\n\n";
-	cout << "						       Game Title\n\n";
+	cout << "						       Projet + +\n\n";
 	cout << "-----------------------------------------------------------" << "--" << "-----------------------------------------------------------\n\n\n";
 	cout << "					   (Appuyer sur 'Entrer' pour Jouer)\n\n";
 	cout << "			   (Clicker sur la 'Croix Rouge' tout en haut a droite pour Quitter) ";
@@ -27,7 +27,7 @@ void MainMenuAffichage() {
 
 		cout << "\n\n\n\n\n";
 		cout << "-----------------------------------------------------------" << "--" << "-----------------------------------------------------------\n\n";
-		cout << "						       Game Title\n\n";
+		cout << "						       Projet + +\n\n";
 		cout << "-----------------------------------------------------------" << "--" << "-----------------------------------------------------------\n\n\n";
 		cout << "					   (Appuyer sur 'Entrer' pour Jouer)\n\n";
 		cout << "			   (Clicker sur la 'Croix Rouge' tout en haut a droite pour Quitter) ";
@@ -58,23 +58,23 @@ int main() {
 	//Second_Personnage.setWeapon();
 
 	//Scene 1
-	cout << "Vous arrivez dans le hall de la guilde avec votre equipier(ere). Le chef de guilde vous tends deux missions de niveau bronze que vous savez etre le niveau d'aventurier le plus bas." << endl;
+	cout << "Vous arrivez dans le hall de la guilde avec votre equipier(ere). Le chef de guilde vous tends deux missions de niveau bronze que vous savez etre le niveau d'aventurier le plus bas.\n" << endl;
 	
 	cout << "1- ''DES RATS !''" << endl;
 	cout << "Lieu : Auberge de Frank" << endl;
 	cout << "Bonjour aventurier(ere)s, je me nomme Frank, aubergiste depuis plus de 30ans." << endl;
 	cout << "Helas mon commerce se trouve en danger : des rats on elu domicile dans ma cuisine !" << endl;
-	cout << "Aidez moi et je vous regalerez avec mon delicieux bouillon de poule et vous payerais de quelques pieces de cuivre." << endl;
+	cout << "Aidez moi et je vous regalerez avec mon delicieux bouillon de poule et vous payerais de quelques pieces de cuivre.\n" << endl;
 	
 	cout << "2- ''DES MITES...''" << endl;
 	cout << "Lieu : Atelier de couture de Charlotte" << endl;
 	cout << "Cher(e)s aventurier(ere)s, je suis Charlotte, couturiere de mere en fille depuis 5 generations." << endl;
 	cout << "Depuis deux jours mes tissus semblent ronges par les mites; Malheureusement j'en ai la phobie et suis dans l'incapacite de m'en debarasser." << endl;
-	cout << "Aidez moi je vous prie. Vous serez payer genereusement de quelques pieces d'argent; suivant le nombre de nuisibles tues." << endl;
+	cout << "Aidez moi je vous prie. Vous serez payer genereusement de quelques pieces d'argent; suivant le nombre de nuisibles tues.\n" << endl;
 	
-	cout << "/A vous de choisir " << Premier_Personnage.getName() << ", qui voulez vous aider ?/ (Choisissez 1 ou 2) : ";
+	cout << "/A vous de choisir " << Premier_Personnage.getName() << ", qui voulez vous aider ? (" << Second_Personnage.getName() << " vous suivra)/ (Choisissez 1 ou 2) : ";
 	cin >> choix;
-	cout << endl;
+	cout << "\n\n";
 
 	switch (choix) //Choix 1
 	{
@@ -100,7 +100,6 @@ int main() {
 		cout << endl;
 		break;
 	}
-
 
 	system("pause");
 	return 0;
