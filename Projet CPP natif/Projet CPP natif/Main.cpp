@@ -57,6 +57,7 @@ int main() {
 	Second_Personnage.ShowCharacter();
 	//Second_Personnage.setWeapon();
 
+	//Scene 1
 	cout << "Vous arrivez dans le hall de la guilde avec votre equipier(ere). Le chef de guilde vous tends deux missions de niveau bronze que vous savez etre le niveau d'aventurier le plus bas." << endl;
 	
 	cout << "1- ''DES RATS !''" << endl;
@@ -71,25 +72,45 @@ int main() {
 	cout << "Depuis deux jours mes tissus semblent ronges par les mites; Malheureusement j'en ai la phobie et suis dans l'incapacite de m'en debarasser." << endl;
 	cout << "Aidez moi je vous prie. Vous serez payer genereusement de quelques pieces d'argent; suivant le nombre de nuisibles tues." << endl;
 	
-	cout << "/A vous de choisir " << Premier_Personnage.getName() << "/ (Choisissez 1 ou 2) :";
+	cout << "/A vous de choisir " << Premier_Personnage.getName() << ", qui voulez vous aider ?/ (Choisissez 1 ou 2) :";
 	cin >> choix;
 	cout << endl;
 
-	while (choix != 1 || choix != 2)
+	while (choix != 1 || choix != 2) // Choix 1 | Joueur 1
 	{
-		system("cls");
-		cout << "(J'ai dit 1 ou 2 ! Pas " << choix << ") : " << endl;
-		cin >> choix;
-		cout << endl;
+		switch (choix)
+		{
+		case 1:
+			system("cls");
+			cout << "CHEF DE GUILDE : Exellent choix ! Ramenez moi un peu de bouillon si vous reussissez." << endl;
+			cout << "Dit-il le sourir en coin.";
+			break;
+
+		case 2:
+			system("cls");
+			cout << "CHEF DE GUILDE : Haha les mites ! Tres bon choix ! Saluez mademoiselle Charlotte pour moi." << endl;
+			cout << "Dit-il d'un ton amical.";
+			break;
+
+		default:
+			system("cls");
+			cout << "(J'ai dit 1 ou 2 ! Pas " << choix << ")\n" << endl;
+			cout << "Rappel : 1- ''DES RATS !'' (Auberge de Frank)" << endl;
+			cout << "         2- ''DES MITES...'' (Atelier de couture de Charlotte)\n" << endl;
+			cout << "(Choisissez 1 ou 2) : ";
+			cin >> choix;
+			cout << endl;
+			break;
+		}
 	}
 	
-	cout << "/A vous de choisir " << Second_Personnage.getName() << "/ (Choisissez 1 ou 2) : ";
+	cout << "\n/A vous de choisir " << Second_Personnage.getName() << ", voulez vous aider " << Premier_Personnage.getName() << " ou venir en aide a quelqu'un d'autre ?/ (Choisissez 1 ou 2) : ";
 	cin >> choix;
 	cout << endl;
 
-	while (choix != 1 || choix != 2)
+	while (choix != 1 || choix != 2) // Choix 1 | Joueur 2
 	{
-		switch(choix)
+		switch(choix) 
 		{
 		case 1 :
 			system("cls");
@@ -105,7 +126,10 @@ int main() {
 
 		default:
 			system("cls");
-			cout << "(J'ai dit 1 ou 2 ! Pas " << choix << ") : " << endl;
+			cout << "(J'ai dit 1 ou 2 ! Pas " << choix << ")\n" << endl;
+			cout << "Rappel : 1- ''DES RATS !'' (Auberge de Frank)" << endl;
+			cout << "         2- ''DES MITES...'' (Atelier de couture de Charlotte)\n" << endl;
+			cout << "(Choisissez 1 ou 2) : ";
 			cin >> choix;
 			cout << endl;
 			break;
