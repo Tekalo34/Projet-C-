@@ -24,7 +24,7 @@ public :
 	// Setters
 	void setP1Name();
 	void setP2Name();
-	void setWeapon(Weapon*W);
+	//void setWeapon(Weapon*W);
 
 private :
 	// Attributs

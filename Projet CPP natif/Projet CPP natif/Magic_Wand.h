@@ -1,7 +1,7 @@
 #pragma once
 #include "Weapon.h"
 
-class Magic_Wand : public Weapon
+class Magic_Wand //: public Weapon
 {
 public:
 	// Constructor

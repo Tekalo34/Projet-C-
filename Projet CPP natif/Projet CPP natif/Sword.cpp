@@ -30,6 +30,7 @@ int Sword::getRange()
 	return "Epee";
 }*/
 
+// Methode pour afficher les stats des armes
 void Sword::showStats()
 {
 	cout << "Degat : " << getDamage() << ", Defense : " << getDef() << ", Portee : " << getRange() ;

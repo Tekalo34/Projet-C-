@@ -54,7 +54,7 @@ void Personnage::setP2Name()
 }
 
 // Methode pour le choix de l'arme
-void Personnage::setWeapon(Weapon*W)
+/*void Personnage::setWeapon(Weapon*W)
 {
 	cout << "Maintenant " << getName() <<" il vous faut une arme !\n\n";
 	cout << "Vous avez le choix entre : \n\n";
@@ -65,7 +65,7 @@ void Personnage::setWeapon(Weapon*W)
 	
 	cout << "(Attention vous n'avez le droit qu'a une seule arme !)\n\n";
 	cout << "Alors quel sera votre arme ? : ";
-	/*cin >> arme;
+	cin >> arme;
 	
 	switch (arme)
 	{
@@ -85,13 +85,13 @@ void Personnage::setWeapon(Weapon*W)
 			cout << "Cette arme n'extiste pas . . . Desole ! \n";
 			setWeapon();
 		break;
-	}*/
-}
+	}
+}*/
 
 // Methode affichant "Personnage"
 void Personnage::ShowCharacter()
 {
-	string continuer = "a";
+	string continuer = "1";
 	// cout << sizeof(getName()); // Debug
 
 	cout << "\n\n\n\n\n\n\n";

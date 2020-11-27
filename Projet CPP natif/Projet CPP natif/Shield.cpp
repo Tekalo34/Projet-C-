@@ -30,6 +30,7 @@ int Shield::getRange()
 	return "Bouclier";
 }*/
 
+// Methode pour afficher les stats des armes
 void Shield::showStats()
 {
 	cout << "Degat : " << getDamage() << ", Defense : " << getDef() << ", Portee : " << getRange();

@@ -20,6 +20,7 @@ int Magic_Wand::getDef()
 	return defense;
 }
 
+// Getter de "portee"
 int Magic_Wand::getRange()
 {
 	return portee;
@@ -30,6 +31,7 @@ int Magic_Wand::getRange()
 	return "Baton Magique";
 }*/
 
+// Methode pour afficher les stats des armes
 void Magic_Wand::showStats()
 {
 	cout << "Degat : " << getDamage() << ", Defense : " << getDef() << ", Portee : " << getRange();
