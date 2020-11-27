@@ -21,7 +21,7 @@ void MainMenuAffichage() {
 		system("cls");
 
 		cout << "                        |\n";
-		cout << "    J'ai dit 'Entrer'   |\n";
+		cout << "    On a dit 'Entrer'   |\n";
 		cout << "  ou 'La Croix Rouge' ! |\n";
 		cout << "________________________|";
 
@@ -92,7 +92,7 @@ int main() {
 
 	default:
 		system("cls");
-		cout << "/J'ai dit 1 ou 2 !/" << endl;
+		cout << "/On a dit 1 ou 2 !/" << endl;
 		cout << "Rappel : 1- ''DES RATS !'' (Auberge de Frank)" << endl;
 		cout << "         2- ''DES MITES...'' (Atelier de couture de Charlotte)" << endl;
 		cout << "/Choisissez 1 ou 2/" << endl;

@@ -127,7 +127,7 @@ void Personnage::ShowCharacter()
 		system("cls");
 		
 		cout << "                      |\n";
-		cout << "  J'ai dit 'Entrer' ! |\n";
+		cout << "  On a dit 'Entrer' ! |\n";
 		cout << "______________________|\n\n\n\n\n";
 		
 		cout << "	    ~~~~| Resume de votre Personnage |~~~~ \n\n";
