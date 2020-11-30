@@ -1,12 +1,22 @@
 ﻿  Magic_Wand.cpp
 C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,23): error C2061: erreur de syntaxe : identificateur 'Weapon'
   Main.cpp
 C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Main.cpp(55,36): error C2664: 'void Personnage::setWeapon(Weapon *)' : impossible de convertir l'argument 1 de 'Sword *' en 'Weapon *'
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Main.cpp(55,31): message : Les types pointés n'ont aucun rapport entre eux ; conversion nécessitant reinterpret_cast, cast de style C ou cast de style fonction
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,7): message : voir la déclaration de 'Personnage::setWeapon'
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Main.cpp(59,35): error C2664: 'void Personnage::setWeapon(Weapon *)' : impossible de convertir l'argument 1 de 'Sword *' en 'Weapon *'
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Main.cpp(59,30): message : Les types pointés n'ont aucun rapport entre eux ; conversion nécessitant reinterpret_cast, cast de style C ou cast de style fonction
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,7): message : voir la déclaration de 'Personnage::setWeapon'
   Personnage.cpp
 C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
   Shield.cpp
 C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,23): error C2061: erreur de syntaxe : identificateur 'Weapon'
   Sword.cpp
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,23): error C2061: erreur de syntaxe : identificateur 'Weapon'
   Weapon.cpp
 C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Sword.h(5,1): error C2504: 'Weapon' : classe de base non définie
+C:\Users\cleme\Documents\GitHub\Projet-C-\Projet CPP natif\Projet CPP natif\Personnage.h(27,23): error C2061: erreur de syntaxe : identificateur 'Weapon'
   Génération de code en cours...

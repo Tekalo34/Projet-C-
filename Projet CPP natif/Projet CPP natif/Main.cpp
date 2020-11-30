@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <Windows.h>
 #include "Personnage.h"
 
 using namespace std;
@@ -16,7 +17,7 @@ void MainMenuAffichage() {
 	cout << "			   (Clicker sur la 'Croix Rouge' tout en haut a droite pour Quitter) ";
 	getline(cin, continuer);
 	
-	while (continuer != "" && continuer != "Echap")
+	while (continuer != "")
 	{
 		system("cls");
 
@@ -41,7 +42,7 @@ int main() {
 	int choix = 0;
 
 	Personnage Premier_Personnage(/*Health*/ 100, /*Strength*/ 50, /*Critical Rate*/ 30.5f);
-	Personnage Second_Personnage(/*Health*/ 100, /*Strength*/ 50, /*Critical Rate*/ 30.5f);
+	Personnage Second_Personnage(/*Health*/ 100, /*Strength*/ 35, /*Critical Rate*/ 40.5f);
 
 	Sword Epee(/*Damage*/ 70, /*Defense*/ 40, /*Range*/ 30);
 	Shield Bouclier(/*Damage*/ 40, /*Defense*/ 60, /*Range*/ 10);
@@ -51,11 +52,24 @@ int main() {
 
 	Premier_Personnage.setP1Name();
 	Premier_Personnage.ShowCharacter();
-	//Premier_Personnage.setWeapon();
+	Premier_Personnage.setWeapon();
 
 	Second_Personnage.setP2Name();
 	Second_Personnage.ShowCharacter();
-	//Second_Personnage.setWeapon();
+	Second_Personnage.setWeapon();
+
+	for (int i = 0; i < 3; i++)
+	{
+		cout << "Vous etes maintenant pret a commencer votre aventure (Veuillez Patienter) ";
+		Sleep(1000);
+		cout << ". ";
+		Sleep(1000);
+		cout << ". ";
+		Sleep(1000);
+		cout << ".\n";
+
+		system("cls");
+	}
 
 	//Scene 1
 	cout << "Vous arrivez dans le hall de la guilde avec votre equipier(ere). Le chef de guilde vous tends deux missions de niveau bronze que vous savez etre le niveau d'aventurier le plus bas.\n" << endl;

@@ -19,12 +19,12 @@ public :
 	int getHP();
 	int getStrength();
 	float getCrit_Rate();
-	string getWeaponType();
+	int getWeaponType();
 
 	// Setters
 	void setP1Name();
 	void setP2Name();
-	//void setWeapon(Weapon*W);
+	void setWeapon(Weapon*W);
 
 private :
 	// Attributs
@@ -32,6 +32,6 @@ private :
 	int pv;
 	int force;
 	float taux_crit;
-	string arme;
+	int arme;
 };
 

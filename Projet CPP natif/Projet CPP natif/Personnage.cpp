@@ -32,12 +32,12 @@ float Personnage::getCrit_Rate()
 	return taux_crit;
 }
 
-string Personnage::getWeaponType()
+int Personnage::getWeaponType()
 {
 	return arme;
 }
 
-// Setter de "nom"
+// Setter de "nom" (Pour le Joueur 1)
 void Personnage::setP1Name()
 {
 	cout << "Entrez le nom de votre 1er Personnage : ";
@@ -45,7 +45,7 @@ void Personnage::setP1Name()
 	system("cls");
 }
 
-// Setter de "nom"
+// Setter de "nom" (Pour le Joueur 2)
 void Personnage::setP2Name()
 {
 	cout << "Entrez le nom de votre 2nd Personnage : ";
@@ -54,39 +54,59 @@ void Personnage::setP2Name()
 }
 
 // Methode pour le choix de l'arme
-/*void Personnage::setWeapon(Weapon*W)
+void Personnage::setWeapon(Weapon*W)
 {
+	cout << "\n\n\n\n";
 	cout << "Maintenant " << getName() <<" il vous faut une arme !\n\n";
 	cout << "Vous avez le choix entre : \n\n";
 
-	cout << "- Epee " << Sword::showStats << " ;\n";
-	cout << "- Baton Magique " << W->showStats << " ;\n";
-	cout << "- Bouclier " << Magic_Wand::showStats << " ;\n\n";
+	cout << "1 - Epee (" /* << W->showStats()*/ << ") ;\n";
+	cout << "2 - Baton Magique (" /* << W->showStats()*/ << ") ;\n";
+	cout << "3 - Bouclier (" /* << W->showStats()*/ << ") ;\n\n";
 	
 	cout << "(Attention vous n'avez le droit qu'a une seule arme !)\n\n";
-	cout << "Alors quel sera votre arme ? : ";
+	cout << "Alors quel sera votre arme ? (Choisissez 1, 2 ou 3) : ";
 	cin >> arme;
 	
-	switch (arme)
+	while (arme != 1 || arme != 2 || arme != 3)
 	{
-		case "Epee" :
-			cout << "*Epee ajoutee au sac*\n";
-		break;
+		switch (arme)
+		{
+			case 1 :
+				cout << "*Epee ajoutee au sac*\n";
+			break;
 
-		case "Baton Magique" :
-			cout << "*Baton Magique ajoute au sac*\n";
-		break;
+			case 2 :
+				cout << "*Baton Magique ajoute au sac*\n";
+			break;
 
-		case "Bouclier" :
-			cout << "*Bouclier ajoute au sac*\n";
-		break;
+			case 3 :
+				cout << "*Bouclier ajoute au sac*\n";
+			break;
 
-		default :
-			cout << "Cette arme n'extiste pas . . . Desole ! \n";
-			setWeapon();
-		break;
+			default :
+				system("cls");
+
+				cout << "                                                  |\n";
+				cout << " Ce choix n'extiste pas . . . Veuillez réitérer ! |\n";
+				cout << "__________________________________________________|\n\n";
+
+
+				cout << "Vous avez le choix entre : \n\n";
+
+				cout << "1 - Epee " /* << W->showStats()*/ << " ;\n";
+				cout << "2 - Baton Magique " /* << W->showStats()*/<< " ;\n";
+				cout << "3 - Bouclier " /* << W->showStats()*/ << " ;\n\n";
+
+				cout << "(Attention vous n'avez le droit qu'a une seule arme !)\n\n";
+				cout << "Alors quel sera votre arme ? (Choisissez 1, 2 ou 3) : ";
+				cin >> arme;
+			break;
+		}
 	}
-}*/
+
+	system("cls");
+}
 
 // Methode affichant "Personnage"
 void Personnage::ShowCharacter()
